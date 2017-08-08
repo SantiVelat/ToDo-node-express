@@ -1,0 +1,80 @@
+body{
+	background-color: black;
+	color: #909090;
+	font-size:100%;
+}
+.mynav{
+	background-color: black;
+	color:white;
+	margin-left: 0px;
+	margin-top:2%;
+	margin-bottom:2%;
+	padding-left: 2%;
+}
+.mynav > li {
+	display: inline;
+}
+.mynav > li > a:link, .mynav > li > a {
+		color: grey;
+		font-size: 200%;
+		margin-right: 2%;
+}
+.nameA{
+	color: #0985F9;
+}
+li.actual > a {
+		color: white;
+}
+h1 {
+	color: white;
+	font-size: 350%;
+}
+h2 {
+	font-size: 250%;
+	margin-bottom: 3%;
+}
+
+hr{
+	border-color: grey;
+}
+.doneTask{
+	text-decoration: line-through;
+	font-size:200%;
+}
+input.input{
+	margin-left: 5%;
+}
+
+li{
+	list-style-type: none
+}
+a:hover{
+	text-decoration: none;
+}
+
+button.done {
+	float:left;
+}
+.noTask{
+	font-size: 200%;
+	margin-left: 5%;
+	margin-top: 8%;
+}
+button.remove{
+	float:left;
+}
+.taskInfo{
+	float:left;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 200%;
+}
+.taskItem{
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+ul.list{
+	position:relative;
+	left: -2%;
+}

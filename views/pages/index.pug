@@ -1,0 +1,38 @@
+extends ../layout
+
+block content
+
+  .header
+  nav
+    ul.mynav
+      li.actual(role='presentation')
+        a(href='/') List Task
+      li(role='presentation')
+        a(href='/completed') Completed
+  hr
+  .container.text-left
+    h1 Todo List
+    h2 Welcome to the TODO app by <span class="nameA">@SantiVelat</span>. Please enjoy
+    .together.col-xs-12
+      button.doneAll.btn.btn-success Done All
+      form(action="tasks", method="POST", class="form-inline")
+        .input-group
+          input.input(name="task", placeholder="Introduce a new task").form-control
+          span.input-group-btn
+            button.btn.btn-primary Add
+    if tasks.length<1
+      p.noTask ...No tasks, add someone...
+    ul.list
+      each task, i in tasks
+        li.col-xs-12.taskItem
+          button.done.btn.btn-success done
+          input.hidden(value=task)
+          .taskInfo 
+            = i+1
+            |. 
+            = task
+            br
+            = time
+          button.remove.btn.btn-danger delete
+
+

@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+
+  .header
+  nav
+    ul.mynav
+      li(role='presentation')
+        a(href='/') List Task
+      li.actual(role='presentation')
+        a(href='/completed') Completed
+  hr
+  .container
+    h1 Completed
+    h2 Welcome to the TODO app by <span class="nameA">@SantiVelat</span>. Please enjoy
+    ul
+      each task in completedTasks
+        li.doneTask= task
+          input.hidden(value=task)
+
+
